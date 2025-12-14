@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Bousalih Hamza", email = "bousalih.hamza.bsh@gmail.com"}
+    {name = "Bousalih Hamza", email = "hamza.bousalih@yahoo.com"}
 ]
 keywords = ["bsh-solutions", "bsh-engine", "sdk", "python"]
 classifiers = [
