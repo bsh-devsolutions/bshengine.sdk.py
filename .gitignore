@@ -41,6 +41,7 @@ venv*/
 .coverage
 htmlcov/
 .tox/
+coverage.xml
 
 # Distribution
 *.whl

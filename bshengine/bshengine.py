@@ -41,10 +41,10 @@ class BshEngine:
         self._error_interceptors: List[BshErrorInterceptor] = error_interceptors or []
 
         # Setup auth function if api_key or jwt_token provided
-        if api_key and not auth_fn:
-            self._auth_fn = lambda: AuthToken(type="APIKEY", token=api_key)
-        elif jwt_token and not auth_fn:
+        if jwt_token and not auth_fn:
             self._auth_fn = lambda: AuthToken(type="JWT", token=jwt_token)
+        elif api_key and not auth_fn:
+            self._auth_fn = lambda: AuthToken(type="APIKEY", token=api_key)
         if refresh_token:
             self._refresh_token_fn = lambda: refresh_token
 

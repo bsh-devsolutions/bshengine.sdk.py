@@ -1,5 +1,4 @@
 """Tests for BshEngine class"""
-import pytest
 from unittest.mock import Mock, MagicMock
 from bshengine import BshEngine, AuthToken
 from bshengine.services import (
