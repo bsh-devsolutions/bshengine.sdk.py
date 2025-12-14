@@ -131,7 +131,7 @@ jobs:
         run: |
           VERSION=${{ steps.tag_version.outputs.version }}
           PACKAGE_NAME=$(grep -E '^name = ' pyproject.toml | sed 's/name = "\(.*\)"/\1/')
-          PACKAGE_NAME="${PACKAGE_NAME}-test"
+          PACKAGE_NAME="${PACKAGE_NAME}"
 
           echo "========================================="
           echo "Publishing to TestPyPI:"
