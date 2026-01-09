@@ -49,3 +49,5 @@ coverage.xml
 # Example
 example.py
 demo/
+
+.DS_Store
